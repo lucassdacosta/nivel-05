@@ -19,7 +19,7 @@ form.onsubmit = event => {
     modalMessage.innerText = message
     modalWrapper.classList.add('open')
 }
-
+//arrow function
 modalBtnClose.onclick = () => modalWrapper.classList.remove('open')
 
 
