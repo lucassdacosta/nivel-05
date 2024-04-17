@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-Br" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temporizador estilo pomodoro">
+    <title>Focus Timer</title>
+    <!--Add link for my icons-->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="shortcut icon" href="assets/image/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="module" defer src="assets/js/script.js"></script>
+</head>
+<body>
+    <div id="app">
+        <button id="toggle-mode">
+            <span class="sr-only">Ativar/Desativar Light Mode</span>
+            <i class="ph-bold ph-sun"></i>
+            <i class="ph-bold ph-moon"></i>
+        </button>
+
+        <section id="timer" class="flex">
+            <span id="minutes">00</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+        </section>
+
+        <section id="controls" class="flex">
+            <button class="ph ph-play-circle">
+                <span class="sr-only">Iniciar contador</span>
+            </button>
+            <button class="ph ph-pause-circle">
+                <span class="sr-only">Pausar contador</span>
+            </button>
+            <button class="ph ph-timer secundary">
+                <span class="sr-only">Ajustar contador</span>
+            </button>
+            <button class="ph ph-stop-circle secundary">
+                <span class="sr-only">Reiniciar contador</span>
+            </button>
+            <button class="ph ph-speaker-none secundary">
+                <span class="sr-only">Iniciar música</span>
+            </button>
+            <button class="ph ph-speaker-high">
+                <span class="sr-only">Parar música</span>
+            </button>
+        </section>
+    </div>
+</body>
+</html>
