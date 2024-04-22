@@ -13,6 +13,7 @@
 }
 
 body{
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
     height: 100vh;
 
@@ -37,12 +38,13 @@ body{
 
 .minutes, span, .seconds{
     font-size: 10rem;
+    font-weight: 500;
 }
 
 .actions{
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .ph-play-circle, 
@@ -81,6 +83,7 @@ body{
     width: 10rem;
     height: 10rem;
     background-color: transparent;
+    border-radius: 1.6rem;
 }
 
 .tree,
@@ -99,6 +102,26 @@ body{
 
 button{
     cursor: pointer;
+}
+
+html.music-on .ph-tree{
+    background-color: var(--bg-color);
+    color: white;
+}
+
+html.music-on2 .ph-cloud-rain{
+    background-color: var(--bg-color);
+    color: white;
+}
+
+html.music-on3 .ph-storefront{
+    background-color: var(--bg-color);
+    color: white;
+}
+
+html.music-on4 .ph-fire{
+    background-color: var(--bg-color);
+    color: white;
 }
 
 .running .ph-play-circle,
