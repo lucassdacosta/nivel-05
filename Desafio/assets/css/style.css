@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --timer-color: black;
+    --btnOff-color: black;
+    --bg-color: #0077b6;
+}
+
+body{
+    font-size: 1.6rem;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+
+.focusTimer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.minutes, span, .seconds{
+    font-size: 10rem;
+}
+
+.actions{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.ph-play-circle, 
+.ph-pause-circle,
+.ph-plus-circle,
+.ph-minus-circle,
+.ph-timer,
+.ph-stop-circle{
+    border: none;
+    background-color: transparent;
+    font-size: 5rem;
+
+    width: max-content;
+    cursor: pointer;
+}
+
+.sounds{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sounds1,
+.sounds2{
+    display: flex;
+    gap: 1.6rem;
+}
+
+.ph-tree,
+.ph-cloud-rain,
+.ph-storefront,
+.ph-fire{
+    border: none;
+
+    font-size: 4rem;
+    width: 10rem;
+    height: 10rem;
+    background-color: transparent;
+}
+
+.tree,
+.rain,
+.store,
+.fire{
+    display: flex;
+    justify-content: center;
+
+    width: 10rem;
+    height: 10rem;
+    background-color: rgb(219, 219, 219);
+
+    border-radius: 1.6rem;
+}
+
+button{
+    cursor: pointer;
+}
+
+.running .ph-play-circle,
+.running .ph-timer,
+html:not(.running) .ph-pause-circle,
+html:not(.running) .ph-stop-circle{
+    display: none;
+}
