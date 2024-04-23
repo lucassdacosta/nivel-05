@@ -47,6 +47,14 @@ body{
     gap: 2rem;
 }
 
+.ph-play-circle{
+    color: rgb(0, 158, 0);
+}
+
+.ph-pause-circle{
+    color: rgb(221, 0, 0);
+}
+
 .ph-play-circle, 
 .ph-pause-circle,
 .ph-plus-circle,
