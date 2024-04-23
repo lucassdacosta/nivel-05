@@ -21,7 +21,6 @@ export function countDown(){
 
     if(minutes < 0){
         sounds.kitchenTimer.play()
-        //fazer o reset 
         reset()
     }
     updateDisplay(minutes, seconds)
