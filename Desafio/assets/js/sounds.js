@@ -5,3 +5,8 @@ export const fireplace = new Audio('./assets/sounds/Lareira.wav')
 
 export const btnPress = new Audio('./assets/sounds/button-press.wav')
 export const kitchenTimer = new Audio('./assets/sounds/kichen-timer.mp3')
+
+coffeeShop.loop = true
+rain.loop = true
+forest.loop = true
+fireplace.loop = true
